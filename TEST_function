@@ -1,0 +1,8 @@
+function onOpen() {
+  var ui = SpreadsheetApp.getUi();
+  ui.createMenu('Custom GitHub Menu')
+      .addItem('Get User Repos','getUserRepos')
+      .addItem('Get Repo languages','getRepoLanguages')
+      .addItem('Get GitHub Rate Limit','getGitHubRateLimit')
+      .addToUi();
+}
